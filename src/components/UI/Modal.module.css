@@ -1,0 +1,31 @@
+.modal {
+    position: fixed;
+    left: 30%;
+    top: 20%;
+    width: 40%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px black;
+    z-index: 999;
+    animation: slidedown 1s forwards;
+}
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+@keyframes slidedown {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
